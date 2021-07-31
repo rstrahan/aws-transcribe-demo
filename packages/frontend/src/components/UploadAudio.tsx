@@ -62,12 +62,11 @@ export class UploadAudio extends React.Component<
                     <Form.Group inline>
                         <Form.Input
                             type="file"
-                            label="Select audio from local(*.mp3/wav)"
+                            label="Upload local audio file(*.mp3/wav)"
                             onChange={this.handleFileUpload}
                         />
                     </Form.Group>
                 </Form>
-                <RecordAudio />
                 <Modal
                     open={showModal}
                     header={modalHeader}
